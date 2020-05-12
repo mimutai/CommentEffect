@@ -569,6 +569,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1833634709}
+  - component: {fileID: 1833634712}
+  - component: {fileID: 1833634711}
   - component: {fileID: 1833634710}
   m_Layer: 0
   m_Name: SYSTEM
@@ -606,6 +608,35 @@ MonoBehaviour:
   CommentText_Prefab: {fileID: 4623775058879056907, guid: 72cbfb65dabb9a44583f6531756551bf,
     type: 3}
   CommentVisualEffect: {fileID: 2920706206493763934}
+--- !u!114 &1833634711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833634708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 449e69bb9d0787c40b0ca74fb6cb2adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  twitchIP: irc.chat.twitch.tv
+  port: 6667
+  channel: 
+  username: 
+  oauth: 
+--- !u!114 &1833634712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833634708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6326013d3633414ba9ea5c8da6933fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2920706206493763928
 GameObject:
   m_ObjectHideFlags: 0

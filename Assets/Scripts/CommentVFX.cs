@@ -19,7 +19,7 @@ public class CommentVFX : MonoBehaviour
         }
     }
 
-    private void ShowComments(Vector3 position, string comment_text)
+    public void ShowComments(Vector3 position, string comment_text)
     {
         // Comment Text Burst
         GameObject text = Instantiate(CommentText_Prefab, position, Quaternion.identity);
