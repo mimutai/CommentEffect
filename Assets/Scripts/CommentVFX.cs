@@ -28,6 +28,6 @@ public class CommentVFX : MonoBehaviour
 
         // Visual Effect Burst
         CommentVisualEffect.SetVector3("BurstPosition", position);
-        CommentVisualEffect.Play();
+        CommentVisualEffect.SendEvent("Burst VFX01");
     }
 }
