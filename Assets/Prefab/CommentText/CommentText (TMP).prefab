@@ -40,7 +40,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 5}
+  m_SizeDelta: {x: 17, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &4623775058879056951
 MeshRenderer:
@@ -116,7 +116,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "TextMeshPro\u3067\u65E5\u672C\u8A9E\u3092\u8868\u793A\uFF01"
+  m_text: test text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f740568c35325d8438035e8a0e35bcef, type: 2}
   m_sharedMaterial: {fileID: 4297356863884612424, guid: f740568c35325d8438035e8a0e35bcef,
@@ -148,9 +148,9 @@ MonoBehaviour:
   m_fontSize: 10
   m_fontSizeBase: 10
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 5
+  m_fontSizeMax: 10
   m_fontStyle: 0
   m_textAlignment: 514
   m_characterSpacing: 0
@@ -161,7 +161,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
+  m_overflowMode: 1
   m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
@@ -240,7 +240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c59076d047335954da69e4b12303a281, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destoryTime: 7
 --- !u!1 &4623775059654184642
 GameObject:
   m_ObjectHideFlags: 0
