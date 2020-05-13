@@ -35,13 +35,15 @@ public class CommentVFX : MonoBehaviour
 
     public void ShowCommentsFireworks(Vector3 position, string comment_text)
     {
+        // Visual Effect Burst
+        float lifetime = Random.Range(1.8f, 2.5f);
+        CommentVisualEffect_Fireworks.SetFloat("Lifetime", lifetime);
+        CommentVisualEffect_Fireworks.SetVector3("BurstPosition", position);
+        CommentVisualEffect_Fireworks.SendEvent("FireworksSpawn");
+
         // Comment Text Burst
         GameObject text = Instantiate(CommentText_Prefab, position, Quaternion.identity);
         text.GetComponent<TextMeshPro>().text = comment_text;
-        text.GetComponent<Animator>().SetTrigger("Show");
-
-        // Visual Effect Burst
-        CommentVisualEffect_Fireworks.SetVector3("BurstPosition", position);
-        CommentVisualEffect_Fireworks.SendEvent("FireworksSpawn");
+        text.GetComponent<CommentTextBehaviour>().RunDelayDisplay(lifetime);
     }
 }
