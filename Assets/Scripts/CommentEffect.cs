@@ -28,7 +28,8 @@ public class CommentEffect : MonoBehaviour
 
     public void MessageReceived(string message)
     {
-        commentVFX.ShowComments(new Vector3(Random.Range(-15, 15), Random.Range(-10, 10), 0), message);
+        commentVFX.ShowCommentsFireworks(new Vector3(Random.Range(-15f, 15f), Random.Range(-8f, 8f), 0), message);
+
     }
 }
 

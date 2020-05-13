@@ -384,7 +384,7 @@ GameObject:
   - component: {fileID: 1163143706}
   - component: {fileID: 1163143705}
   m_Layer: 0
-  m_Name: Visual Effect Test
+  m_Name: Comment VFX Fireworks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -447,7 +447,16 @@ VisualEffect:
   m_ResetSeedOnPlay: 1
   m_PropertySheet:
     m_Float:
-      m_Array: []
+      m_Array:
+      - m_Value: 0
+        m_Name: Lifetime
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Initial Velocity
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: SpawnPosition Y
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
@@ -476,7 +485,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1163143704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -5, z: -5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -718,6 +727,7 @@ MonoBehaviour:
   CommentText_Prefab: {fileID: 4623775058879056907, guid: 72cbfb65dabb9a44583f6531756551bf,
     type: 3}
   CommentVisualEffect: {fileID: 2920706206493763934}
+  CommentVisualEffect_Fireworks: {fileID: 1163143706}
 --- !u!114 &1833634711
 MonoBehaviour:
   m_ObjectHideFlags: 0
