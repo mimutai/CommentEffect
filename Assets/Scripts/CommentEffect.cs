@@ -18,7 +18,7 @@ public class CommentEffect : MonoBehaviour
 
     void Start()
     {
-        twitchIRCClient.Connect();
+        
     }
 
     void Update()
@@ -30,6 +30,13 @@ public class CommentEffect : MonoBehaviour
     {
         commentVFX.ShowCommentsFireworks(new Vector3(Random.Range(-15f, 15f), Random.Range(-8f, 8f), 0), message);
 
+    }
+
+    public void ApplicationExit()
+    {
+        twitchIRCClient.Disconnect();
+        Application.Quit();
+        Debug.Log("Quit");
     }
 }
 
