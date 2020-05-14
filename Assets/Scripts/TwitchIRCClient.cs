@@ -57,7 +57,7 @@ public class TwitchIRCClient : MonoBehaviour
             streamWriter = new StreamWriter(networkStream);
             
 
-            if (oauth.StartsWith("oauth:")) oauth.Remove(0, 6); //oauthから始まる場合その文字を削除
+            if (oauth.StartsWith("oauth:")) oauth = oauth.Remove(0, 6); //oauthから始まる場合その文字を削除
             streamWriter.WriteLine("PASS oauth:" + oauth);
 
             streamWriter.WriteLine("NICK " + username);
