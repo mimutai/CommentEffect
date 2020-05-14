@@ -29,6 +29,14 @@ public class TwitchIRCClient : MonoBehaviour
     public string username = string.Empty;
     public string oauth = string.Empty;
 
+    /* 外部から値を設定 */
+    public void SetChannel(string channel) => this.channel = channel;
+    public void SetUserName(string username) => this.username = username;
+    public void SetOAuth(string oauth) => this.oauth = oauth;
+
+    /* 接続状態を返す */
+    public bool IsConnected() => isConnected;
+    
 
     public void Connect()
     {
